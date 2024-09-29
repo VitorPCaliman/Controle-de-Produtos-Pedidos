@@ -159,7 +159,7 @@ Você pode testar os endpoints do microserviço usando o Postman. Abaixo estão 
   "descricao": "Eletrônicos"
   }
 
-#### 2. Criando Departamentos:
+#### 2. Alterando Departamentos:
 
 - **Método**: `PUT`
 - **URL**: `http://localhost:8080/departamentos/{id}`
@@ -175,14 +175,14 @@ Você pode testar os endpoints do microserviço usando o Postman. Abaixo estão 
 - **Método**: `GET`
 - **URL**: `http://localhost:8080/departamentos/{id}`
 
-#### 4. Buscando Departamento por ID:
+#### 4. Deletando Departamento:
 
 - **Método**: `DELETE`
 - **URL**: `http://localhost:8080/departamentos/{id}`
 
 #### 5. Buscando Departamento por Iintervalo de código:
 
-- **Método**: `DELETE`
+- **Método**: `GET`
 - **URL**: `http://localhost:8080/departamentos/{id}](http://localhost:8080/departamentos?codigoInicial=DEP001&codigoFinal=DEP005`
 
 ### Produtos:
@@ -256,7 +256,7 @@ Você pode testar os endpoints do microserviço usando o Postman. Abaixo estão 
 
 #### 2. Atualizando Pedidos:
 
-- **Método**: `POST`
+- **Método**: `PUT`
 - **URL**: `http://localhost:8080/pedidos`
 - **Corpo**:
   ```json
@@ -275,7 +275,7 @@ Você pode testar os endpoints do microserviço usando o Postman. Abaixo estão 
 
 #### 3. Buscando Pedidos por ID:
 
-- **Método**: `DELETE`
+- **Método**: `GET`
 - **URL**: `http://localhost:8080/pedidos/{id}`
 
 #### 4. Deletando Produtos por ID:
