@@ -1,6 +1,5 @@
 # Controle de Pedidos e Produtos
 
-![Controle de Pedidos](https://via.placeholder.com/800x200.png?text=Controle+de+Pedidos+e+Produtos)
 
 ![Java](https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.4-green?logo=spring&logoColor=white)
