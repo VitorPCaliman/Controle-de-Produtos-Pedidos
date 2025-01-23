@@ -56,11 +56,12 @@ public class DepartamentoServiceTest {
         Exception exception = assertThrows(RuntimeException.class, () -> {
             departamentoService.buscarDepartamentoPorId(1L);
         });
-        assertEquals("Departamento não encontrado", exception.getMessage());
+        assertEquals("Departamento não encontrado com ID: " +1L, exception.getMessage());
     }
 
     @Test
     public void testDeleteDepartamento() {
+        when(departamentoRepository.findById(1L)).thenReturn(Optional.of(departamento));
         departamentoService.deletarDepartamento(1L);
         verify(departamentoRepository, times(1)).deleteById(1L);
     }
