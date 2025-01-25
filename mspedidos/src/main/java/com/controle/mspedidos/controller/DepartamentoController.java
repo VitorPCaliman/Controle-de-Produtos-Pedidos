@@ -54,7 +54,7 @@ public class DepartamentoController {
                             schema = @Schema(implementation = Departamento.class))),
             @ApiResponse(responseCode = "400", description = "Dados inválidos para criação do departamento",
                     content = @Content(mediaType = "application/json",
-                            examples = @ExampleObject(value = "{\"error\":\"O campo 'codigo' é obrigatório.\"}")))
+                            examples = @ExampleObject(value = "{\"error\":\"O campo 'codigo' é obrigatório.\"}"))),
             @ApiResponse(responseCode = "500", description = "Ocorreu um erro inesperado. Por favor, tente novamente.")
     })
     @PostMapping
