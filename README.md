@@ -10,7 +10,7 @@
 
 ## Descrição
 
-Este microserviço fornece uma API RESTful para o gerenciamento de pedidos e produtos em um sistema de controle. O objetivo é permitir operações de CRUD (Create, Read, Update, Delete) para pedidos e departamentos, com funcionalidades específicas de consulta e filtragem.
+Este microserviço fornece uma API REST para o gerenciamento de pedidos e produtos em um sistema de controle. O objetivo é permitir operações de CRUD (Create, Read, Update, Delete) para pedidos e departamentos, com funcionalidades específicas de consulta e filtragem.
 
 ## Funcionalidades
 
