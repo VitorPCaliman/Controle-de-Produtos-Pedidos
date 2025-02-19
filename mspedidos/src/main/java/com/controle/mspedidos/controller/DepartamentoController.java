@@ -32,8 +32,7 @@ public class DepartamentoController {
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "Lista de departamentos retornada com sucesso",
                     content = @Content(mediaType = "application/json",
-                            schema = @Schema(implementation = Departamento.class),
-                            examples = @ExampleObject(value = "[{\"id\":1,\"codigo\":\"DPT001\",\"descricao\":\"Eletrônicos\"}]"))),
+                            schema = @Schema(implementation = Departamento.class))),
             @ApiResponse(responseCode = "400", description = "Parâmetros inválidos fornecidos",
                     content = @Content(mediaType = "application/json",
                             examples = @ExampleObject(value = "{\"error\":\"O código inicial não pode ser maior que o código final\"}"))),
@@ -63,8 +62,7 @@ public class DepartamentoController {
                 description = "Objeto que representa o departamento a ser criado.",
                 required = true,
                 content = @Content(mediaType = "application/json",
-                    schema = @Schema(implementation = Departamento.class),
-                    examples = @ExampleObject(value = "{\"codigo\":\"DPT011\",\"descricao\":\"Roupas\"}"))
+                    schema = @Schema(implementation = Departamento.class))
         ) Departamento departamento) {
             return departamentoService.criarDepartamento(departamento);
     }
@@ -74,8 +72,7 @@ public class DepartamentoController {
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "Departamento encontrado com sucesso",
                     content = @Content(mediaType = "application/json",
-                            schema = @Schema(implementation = Departamento.class),
-                            examples = @ExampleObject(value = "{\"id\":1,\"codigo\":\"DPT001\",\"descricao\":\"Eletrônicos\"}"))),
+                            schema = @Schema(implementation = Departamento.class))),
             @ApiResponse(responseCode = "404", description = "Departamento não encontrado com o ID fornecido",
                     content = @Content(mediaType = "application/json",
                             examples = @ExampleObject(value = "Departamento não encontrado com ID: 1")))
@@ -90,8 +87,7 @@ public class DepartamentoController {
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "Departamento atualizado com sucesso",
                     content = @Content(mediaType = "application/json",
-                            schema = @Schema(implementation = Departamento.class),
-                            examples = @ExampleObject(value = "{\"id\":1,\"codigo\":\"DPT001\",\"descricao\":\"Eletrônicos Atualizados\"}"))),
+                            schema = @Schema(implementation = Departamento.class))),
             @ApiResponse(responseCode = "404", description = "Departamento não encontrado com o ID fornecido",
                     content = @Content(mediaType = "application/json",
                             examples = @ExampleObject(value = "Departamento não encontrado com ID: 1")))
